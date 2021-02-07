@@ -14,6 +14,7 @@ class Test_Names(unittest.TestCase):
             full_name.name("","Pig")
 
     def test_type_errors(self):
+        #Check for the type errors raised from incorrect usage of the function
         with self.assertRaises(TypeError):
             full_name.name()
             full_name.name(5,"hello")
